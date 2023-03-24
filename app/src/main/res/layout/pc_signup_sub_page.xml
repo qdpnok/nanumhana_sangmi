@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PCSignupSubActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/up14B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:state_selected="false"
+        android:background="@drawable/btn_ok"
+        android:textColor="@drawable/txt_color"
+        android:text="14세 이상"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="약관내용"
+        />
+
+    <CheckBox
+        android:id="@+id/agreeCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인 후 선택" />
+
+    <Button
+        android:id="@+id/movesignupB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음으로" />
+
+</LinearLayout>

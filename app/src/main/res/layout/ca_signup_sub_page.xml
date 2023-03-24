@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CASignupSubActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="약관내용"
+        />
+
+    <CheckBox
+        android:id="@+id/agreeCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인 후 선택" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/swcB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:state_selected="false"
+            android:background="@drawable/btn_ok"
+            android:textColor="@drawable/txt_color"
+            android:text="법인사업자"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fpoB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:state_selected="false"
+            android:background="@drawable/btn_ok"
+            android:textColor="@drawable/txt_color"
+            android:text="개인사업자" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/SUcrnET"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:hint="사업자등록번호 또는 고유번호 입력" />
+
+        <Button
+            android:id="@+id/crnB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인증하기" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/movesignupB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음으로" />
+
+</LinearLayout>
